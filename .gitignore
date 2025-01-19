@@ -1,5 +1,5 @@
-**/bin/Debug
 **/obj/
+!**/bin/Release/publish/*
 
 *.user
 *.suo
@@ -9,9 +9,9 @@
 .vscode/
 
 
-*.dll
-*.pdb
-*.exe
+!*.dll
+!*.pdb
+!*.exe
 
 !publish/
 !publish/**
