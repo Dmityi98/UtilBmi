@@ -27,7 +27,7 @@ namespace UtilBmi
         }
         public async Task<List<BmiModel>> GetRedundantBmiAsync()
         {
-            return await _context.bmiModels.Where(b => b.Bmi < 24.9).ToListAsync();
+            return await _context.bmiModels.Where(b => b.Bmi > 24.9).ToListAsync();
         }
         public async Task <BmiModel?> GetHighestAsunc()
         {
