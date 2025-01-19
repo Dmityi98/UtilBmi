@@ -40,10 +40,10 @@ namespace TestTask
             var databaseBmi = new DatabaseBmi(new DbContextBmi(optionsBuilder.Options));
 
             while(true)
-            {
+            {   
                 Console.Write("> ");
                 string? input = Console.ReadLine();
-                Commands.InputCommand(input);
+                Commands.InputCommand(input, logger, databaseBmi);
             }
         }
     }
