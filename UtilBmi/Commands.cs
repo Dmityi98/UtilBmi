@@ -83,17 +83,9 @@ namespace UtilBmi
             else
             {
                 Console.WriteLine($"Кол-во записей {count}");
-                Console.WriteLine($"Число пользователей с нормальным ИМТ {normalBmi.Count}");
-                Console.WriteLine("Пользователи с недостаточным ИМТ");
-                foreach (var item in insufficientBmi)
-                {
-                    Console.WriteLine($"Имя: {item.UserName} Рост: {item.Height}");
-                }
-                Console.WriteLine("Пользователи с избыточным ИМТ");
-                foreach (var item in redundantBmi)
-                {
-                    Console.WriteLine($"Имя: {item.UserName} Рост: {item.Height}");
-                }
+                Console.WriteLine($"Число пользователей с нормальным ИМТ - {normalBmi.Count}");
+                Console.WriteLine($"Число пользователей с недостаточным ИМТ - {insufficientBmi.Count}");
+                Console.WriteLine($"Число пользователей с избыточным ИМТ - {redundantBmi.Count}");
                 Console.WriteLine($"Самый высокий клиент: Имя {highestClient.UserName}; Рост {highestClient.Height}");
                 Console.WriteLine($"Самый тяжёлого клиент: Имя {heaviestClient.UserName}; Рост {heaviestClient.Height}");
             }
