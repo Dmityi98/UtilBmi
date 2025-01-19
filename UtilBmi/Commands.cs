@@ -83,11 +83,7 @@ namespace UtilBmi
             else
             {
                 Console.WriteLine($"Кол-во записей {count}");
-                Console.WriteLine("Пользователи с нормальным ИМТ");
-                foreach (var item in normalBmi)
-                {
-                    Console.WriteLine($"Имя: {item.UserName} Рост: {item.Height}");
-                }
+                Console.WriteLine($"Число пользователей с нормальным ИМТ {normalBmi.Count}");
                 Console.WriteLine("Пользователи с недостаточным ИМТ");
                 foreach (var item in insufficientBmi)
                 {
