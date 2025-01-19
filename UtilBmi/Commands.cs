@@ -32,18 +32,19 @@ namespace UtilBmi
 
             if (command.Length < 3 || command.Length > 4)
             {
-                logger.LogInformation("Error: add <height_in_cm>  <wight_in_kg> [<client_name>]");
+                logger.LogError("Error: add <height_in_cm>  <wight_in_kg> [<client_name>]");
             }
             if (!double.TryParse(command[1], out double height))
             {
-                logger.LogInformation("Неправильно введён параметр роста");
+                logger.LogError("Неправильно введён параметр роста");
+                Environment.Exit(0);
                 
-                return;
             }
             if (!double.TryParse(command[2], out double weight))
             {
-                logger.LogInformation("Неправильно введён параметр веса");
-                return;
+                logger.LogError("Неправильно введён параметр веса");
+                Environment.Exit(0);
+                
             }
             string name = null;
             if (command.Length == 4)
