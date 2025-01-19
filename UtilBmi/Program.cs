@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using UtilBmi;
 using UtilBmi.DataBase;
 
-namespace TestTask
+namespace UtilBmi
 {
     public class Program
     {
